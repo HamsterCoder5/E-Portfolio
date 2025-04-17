@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <script>
+      fetch('/shared-resources.html')
+        .then(res => res.text())
+        .then(html => document.head.innerHTML += html);
+    </script>
+    
+    <title>Xander Rosero | Full-Stack</title>
+    <link rel="stylesheet" href="/styles/projects-styles.css">
+    <link rel="stylesheet" href="/styles/about-styles.css">
+    <link rel="stylesheet" href="/styles/hero-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="hero" id="hero">
+      <div class="cursor-effect" id="cursor-effect"></div>
+      <div class="intro-container">
+        <span class="hero-text">Hi, my name is</span>
+        <span class="hero-name">Xander Rosero</span>
+        <div class="hero-line"></div>
+        <span class="hero-subtitle">Full-Stack Web Developer</span>
+        <span style="font-size: 12px; color:rgb(169, 169, 169)">Masbate, Philippines</span>
+      </div>
+      <div class="hero-about-button scroll-button" id="hero-about-button"  data-target=".about">
+        About Me
+      </div>
+    </div>
+   
+    <div class="header">
+      <span class="header-item scroll-button" data-target=".hero">Home</span>
+      <span class="header-item scroll-button" data-target=".about">About</span>
+      <span class="header-item scroll-button" data-target=".projects">Projects</span>
+      <span class="header-item scroll-button" data-target=".contact">Contact</span>
+    </div>
+    
+    <div class="content">
+      <div class="section about">
+        <span class="section-title">About</span>
+        <p>I'm a 15 year old <b>Full-Stack Web Developer</b>.
+          I have been programming for 5 years.
+        </p>
+        <br>
+        <p>A dedicated developer with expertise in both front-end and back-end technologies, 
+          including Python, Unity, and C#. I strive to create efficient, user-centric solutions while 
+          continuously expanding my skill set to stay current with industry trends. My goal is to develop 
+          innovative applications that not only meet user needs but also contribute to meaningful, real-world impact.
+        </p>
+        <h2>My Skills</h2>
+        <div class="skills">
+          <div class="skill">
+            <img src="icons/python.png" alt="Python" title="Python">
+            <p>Python</p>
+          </div>
+          <div class="skill">
+            <img src="icons/csharp.png" alt="C#" title="C#">
+            <p>C#</p>
+          </div>
+          <div class="skill">
+            <img src="icons/c++.png" alt="C++" title="C++">
+            <p>C++</p>
+          </div>
+          <div class="skill">
+            <img src="icons/css.png" alt="CSS" title="CSS">
+            <p>CSS</p>
+          </div>
+          <div class="skill">
+            <img src="icons/html.png" alt="HTML" title="HTML">
+            <p>HTML</p>
+          </div>
+          <div class="skill">
+            <img src="icons/javascript.png" alt="JavaScript" title="JavaScript">
+            <p>JavaScript</p>
+          </div>
+        </div>
+        <div class="skills">
+          <div class="skill">
+            <img src="icons/unity.png" alt="Unity" title="Unity">
+            <p>Unity</p>
+          </div>
+          <div class="skill">
+            <img src="icons/arduino.png" alt="Arduino" title="Arduino">
+            <p>Arduino</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section experience">
+        <span class="section-title">Experience</span>
+      </div>
+
+      <div class="section projects">
+        <span class="section-title">Projects</span>
+
+        <h2 class="sub-section-title">Web Projects</h2>
+        <p>These are websites that I have made</p>
+        <div class="project-container">
+          <div class="project-image-wrapper">
+            <img onclick="changePage('/error.html')" class="project-image" src="/images/screenshot.png" alt="Project Screenshot">
+            <div class="image-shadow-overlay"></div>
+            <div class="project-tools">
+              <div class="project-tool">
+                <img src="icons/html.png" alt="HTML" title="HTML">
+                HTML
+              </div>
+              <div class="project-tool">
+                <img src="icons/css.png" alt="CSS" title="CSS">
+                CSS
+              </div>
+              <div class="project-tool">
+                <img src="icons/JavaScript.png" alt="JavaScript" title="JavaScript">
+                JavaScript
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h2>E-Portfolio</h2>
+            <p>A simple e-portfolio showcasing all my work and projects</p>
+            <button onclick="changePage('/index.html')">Live App</button>
+            <button onclick="changePage('/error.html')">Learn More</button>
+          </div>
+        </div>
+      
+        <h2 class="sub-section-title">Unity Projects</h2>
+        <p>These are projects I have made using the Unity Engine, mostly games or applications</p>
+        <div class="project-container reverse">
+          <div class="project-info reverse">
+            <h2>Jumperformer</h2>
+            <p>My first platformer game created using Unity</p>
+            <button onclick="changePage('/error.html')">Learn More</button>
+          </div>
+          <div class="project-image-wrapper">
+            <img onclick="changePage('/error.html')" class="project-image" src="/images/jumperformer.png" alt="Project Screenshot">
+            <div class="image-shadow-overlay"></div>
+          
+            <div class="project-tools">
+              <div class="project-tool">
+                <img src="icons/Unity.png" alt="Unity" title="Unity">
+                Unity
+              </div>
+              <div class="project-tool">
+                <img src="icons/csharp.png" alt="C#" title="C#">
+                C#
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-container">
+          <div class="project-image-wrapper">
+            <img onclick="changePage('/error.html')" class="project-image" src="/images/mllt1.jpg" alt="Minasbate Language Learning Tool">
+            <div class="image-shadow-overlay"></div>
+          
+            <div class="project-tools">
+              <div class="project-tool">
+                <img src="icons/Unity.png" alt="Unity" title="Unity">
+                Unity
+              </div>
+              <div class="project-tool">
+                <img src="icons/csharp.png" alt="C#" title="C#">
+                C#
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h2>Minasbate Language Learning Tool</h2>
+            <p>
+              An incomplete android application about the Minasbate language featuring 
+              sample phrases, a dictionary, learning quizzes, and user customization.
+              Made using the Unity Engine and the C# language.
+            </p>
+            <button onclick="changePage('/index.html')">Live App</button>
+            <button onclick="changePage('/error.html')">Learn More</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="section contact">
+        <span class="section-title">Contact</span>
+        <span style="margin-bottom: 20px;">Want to reach out? Let's connect!</span>
+        <form action="https://formsubmit.co/edmondxanderrosero@gmail.com" method="POST" class="contact-form" >
+          <input type="text" name="name" class="name-input contact-input"  placeholder="Name" required>
+          <input type="email" name="email" class="email-input contact-input"  placeholder="Email" required>
+          <textarea name="message" class="message-input contact-input"  placeholder="Message" required></textarea>
+          <button type="submit" class="contact-button">Send</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>Xander Rosero | &copy; 2025</p>
+      <ul>
+        <li><a href="https://github.com/HamsterCoder5" target="_blank"><img src="/icons/github.png"></a></li>
+        <li><a href="https://www.facebook.com/xander.rosero.5/" target="_blank"><img src="/icons/facebook.png"></a></li>
+        <li><a href="mailto:edmondxanderrosero@gmail.com" target="_blank"><img src="/icons/email.png"></i></a></li>
+      </ul>
+    </div>
+
+    <script>
+      window.isMobile = function(){
+        if(window.matchMedia("(any-hover:none)").matches) {
+          return true;
+        } else {
+          return false;
+        }
+      };
+    </script>
+
+    <script>
+      const heroPage = document.getElementById('hero');
+      const cursorEffect = document.getElementById('cursor-effect');
+      const isMobile = window.isMobile();
+
+      document.querySelectorAll('.scroll-button').forEach(button => {
+        button.addEventListener('click', () => {
+          const target = document.querySelector(button.getAttribute('data-target'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+
+      document.addEventListener('mousemove', (e) => {
+        if (!isMobile) {
+          controlCursorEffect(e);
+        }
+      });
+
+      const cEffectRadius = 200;
+      cursorEffect.style.width = `${cEffectRadius*2}px`;
+      cursorEffect.style.height = `${cEffectRadius*2}px`;
+      function controlCursorEffect(e) {
+        const areaRect = heroPage.getBoundingClientRect();
+
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+
+        const isInsideArea = (
+          mouseX >= areaRect.left - cEffectRadius &&
+          mouseX <= areaRect.right + cEffectRadius &&
+          mouseY >= areaRect.top - cEffectRadius &&
+          mouseY <= areaRect.bottom + cEffectRadius
+        );
+
+        if (isInsideArea) {
+          cursorEffect.style.display = 'block';
+          cursorEffect.style.left = `${mouseX - areaRect.left}px`;
+          cursorEffect.style.top = `${mouseY - areaRect.top}px`;
+        } else {
+          cursorEffect.style.display = 'none';
+        }
+      }
+  
+      const header = document.querySelector(".header");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY >= heroPage.offsetHeight) {
+          header.classList.add("scrolled");
+        }else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      function changePage(pageURL) {
+        window.location.href = pageURL;
+      }
+    </script>
+  
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 - Page Not Found</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .error-container {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .error-code {
+      font-size: 8rem;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    .error-message {
+      font-size: 1.5rem;
+    }
+
+    .error-description {
+      color: gray;
+      margin: 1rem 0 2rem;
+      font-size: 1rem;
+    }
+
+    .error-btn {
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .error-btn:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+    }
+  </style>
+  <script>
+    fetch('/shared-resources.html')
+      .then(res => res.text())
+      .then(html => document.head.innerHTML += html);
+  </script>
+</head>
+<body>
+  <div class="error-container">
+    <h1 class="error-code">404</h1>
+    <p class="error-message">Page Not Found</p>
+    <p class="error-description">The page you're looking for doesn't exist or has been moved.</p>
+    <button class="error-btn" onclick="window.location.href='/'">Back to Home</button>
+  </div>
+</body>
+</html>
