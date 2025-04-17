@@ -3,12 +3,13 @@
 <html>
   <head>
     <script>
-      fetch('/shared-resources.html')
+      fetch('../shared-resources.html')
         .then(res => res.text())
         .then(html => document.head.innerHTML += html);
     </script>
 
     <title>Placeholder | Game</title>
+    <link rel="stylesheet" href="../styles/styles.css">
   </head>
   <body>
     
@@ -26,9 +27,9 @@
     <div class="footer">
       <p>Xander Rosero | &copy; 2025</p>
       <ul>
-        <li><a href="https://github.com/HamsterCoder5" target="_blank"><img src="/icons/github.png"></a></li>
-        <li><a href="https://www.facebook.com/xander.rosero.5/" target="_blank"><img src="/icons/facebook.png"></a></li>
-        <li><a href="mailto:edmondxanderrosero@gmail.com" target="_blank"><img src="/icons/email.png"></i></a></li>
+        <li><a href="https://github.com/HamsterCoder5" target="_blank"><img src="../icons/github.png"></a></li>
+        <li><a href="https://www.facebook.com/xander.rosero.5/" target="_blank"><img src="../icons/facebook.png"></a></li>
+        <li><a href="mailto:edmondxanderrosero@gmail.com" target="_blank"><img src="../icons/email.png"></i></a></li>
       </ul>
     </div>
 
