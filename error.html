@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>404 - Page Not Found</title>
-  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="styles.css" />
   <style>
     body {
       display: flex;
@@ -49,7 +49,7 @@
     }
   </style>
   <script>
-    fetch('/shared-resources.html')
+    fetch('shared-resources.html')
       .then(res => res.text())
       .then(html => document.head.innerHTML += html);
   </script>
@@ -59,7 +59,7 @@
     <h1 class="error-code">404</h1>
     <p class="error-message">Page Not Found</p>
     <p class="error-description">The page you're looking for doesn't exist or has been moved.</p>
-    <button class="error-btn" onclick="window.location.href='/'">Back to Home</button>
+    <button class="error-btn" onclick="window.location.href='index.html'">Back to Home</button>
   </div>
 </body>
 </html>
